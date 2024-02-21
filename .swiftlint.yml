@@ -1,0 +1,9 @@
+included:
+    - Sources/
+
+disabled_rules:
+    - line_length
+    - identifier_name
+
+trailing_comma:
+    mandatory_comma: true
