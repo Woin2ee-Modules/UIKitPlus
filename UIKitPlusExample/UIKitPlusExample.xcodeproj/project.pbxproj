@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,8 +13,23 @@
 		DA6904962B85D61B00FB2019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6904942B85D61B00FB2019 /* Main.storyboard */; };
 		DA6904982B85D61C00FB2019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6904972B85D61C00FB2019 /* Assets.xcassets */; };
 		DA69049B2B85D61C00FB2019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6904992B85D61C00FB2019 /* LaunchScreen.storyboard */; };
-		DA6904A72B85D8BE00FB2019 /* UIKitPlus in Frameworks */ = {isa = PBXBuildFile; productRef = DA6904A62B85D8BE00FB2019 /* UIKitPlus */; };
+		DA6904E22B85E84300FB2019 /* UIKitPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6904E12B85E84300FB2019 /* UIKitPlus.framework */; };
+		DA6904E32B85E84300FB2019 /* UIKitPlus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA6904E12B85E84300FB2019 /* UIKitPlus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DA6904E42B85E84300FB2019 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DA6904E32B85E84300FB2019 /* UIKitPlus.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DA69048B2B85D61B00FB2019 /* UIKitPlusExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPlusExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +40,7 @@
 		DA6904972B85D61C00FB2019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA69049A2B85D61C00FB2019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA69049C2B85D61C00FB2019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA6904E12B85E84300FB2019 /* UIKitPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIKitPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA6904A72B85D8BE00FB2019 /* UIKitPlus in Frameworks */,
+				DA6904E22B85E84300FB2019 /* UIKitPlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +60,7 @@
 			children = (
 				DA69048D2B85D61B00FB2019 /* UIKitPlusExample */,
 				DA69048C2B85D61B00FB2019 /* Products */,
+				DA6904E02B85E84300FB2019 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +86,14 @@
 			path = UIKitPlusExample;
 			sourceTree = "<group>";
 		};
+		DA6904E02B85E84300FB2019 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA6904E12B85E84300FB2019 /* UIKitPlus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,6 +104,7 @@
 				DA6904872B85D61B00FB2019 /* Sources */,
 				DA6904882B85D61B00FB2019 /* Frameworks */,
 				DA6904892B85D61B00FB2019 /* Resources */,
+				DA6904E42B85E84300FB2019 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -86,7 +112,6 @@
 			);
 			name = UIKitPlusExample;
 			packageProductDependencies = (
-				DA6904A62B85D8BE00FB2019 /* UIKitPlus */,
 			);
 			productName = UIKitPlusExample;
 			productReference = DA69048B2B85D61B00FB2019 /* UIKitPlusExample.app */;
@@ -117,7 +142,6 @@
 			);
 			mainGroup = DA6904822B85D61B00FB2019;
 			packageReferences = (
-				DA6904A52B85D8BE00FB2019 /* XCLocalSwiftPackageReference ".." */,
 			);
 			productRefGroup = DA69048C2B85D61B00FB2019 /* Products */;
 			projectDirPath = "";
@@ -308,6 +332,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,6 +361,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,20 +397,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		DA6904A52B85D8BE00FB2019 /* XCLocalSwiftPackageReference ".." */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ..;
-		};
-/* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		DA6904A62B85D8BE00FB2019 /* UIKitPlus */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = UIKitPlus;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA6904832B85D61B00FB2019 /* Project object */;
 }

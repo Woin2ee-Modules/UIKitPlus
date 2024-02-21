@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "UIKitPlus"
-               BuildableName = "UIKitPlus"
+               BlueprintIdentifier = "DA6904B22B85E31200FB2019"
+               BuildableName = "UIKitPlus.framework"
                BlueprintName = "UIKitPlus"
-               ReferencedContainer = "container:">
+               ReferencedContainer = "container:UIKitPlus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -30,13 +30,14 @@
       shouldAutocreateTestPlan = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "NO"
+            parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "UIKitPlusTests"
-               BuildableName = "UIKitPlusTests"
+               BlueprintIdentifier = "DA6904D02B85E4F300FB2019"
+               BuildableName = "UIKitPlusTests.xctest"
                BlueprintName = "UIKitPlusTests"
-               ReferencedContainer = "container:">
+               ReferencedContainer = "container:UIKitPlus.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -61,10 +62,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "UIKitPlus"
-            BuildableName = "UIKitPlus"
+            BlueprintIdentifier = "DA6904B22B85E31200FB2019"
+            BuildableName = "UIKitPlus.framework"
             BlueprintName = "UIKitPlus"
-            ReferencedContainer = "container:">
+            ReferencedContainer = "container:UIKitPlus.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

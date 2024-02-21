@@ -14,7 +14,8 @@ final class ViewController: UIViewController {
         let button: UIButton = .init()
         button.setTitle("Haptic!", for: .normal)
         button.setTitleColor(.systemRed, for: .normal)
-        button.backgroundColor = .systemMint
+        button.setBackgroundColor(.systemBlue, for: .normal)
+        button.setBackgroundColor(.systemBlue.withAlphaComponent(0.7), for: .highlighted)
         let action: UIAction = .init { _ in
             HapticGenerator.shared.impactOccurred(style: .medium, intensity: 1.0)
         }
@@ -43,6 +44,8 @@ final class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             hapticButton.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             hapticButton.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerYAnchor),
+            hapticButton.widthAnchor.constraint(equalToConstant: 100),
+            hapticButton.heightAnchor.constraint(equalToConstant: 50),
             
             hapticOnOffSwitch.leadingAnchor.constraint(equalTo: hapticButton.trailingAnchor, constant: 20),
             hapticOnOffSwitch.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerYAnchor),
