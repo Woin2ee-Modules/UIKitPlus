@@ -8,13 +8,13 @@ let package = Package(
     products: [
         .library(
             name: "UIKitPlus",
-            targets: ["UIKitPlus"]),
+            targets: ["UIKitPlus"])
     ],
     targets: [
         .target(
             name: "UIKitPlus"),
         .testTarget(
             name: "UIKitPlusTests",
-            dependencies: ["UIKitPlus"]),
+            dependencies: ["UIKitPlus"])
     ]
 )

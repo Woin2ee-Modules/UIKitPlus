@@ -3,7 +3,7 @@
 import UIKit
 
 extension UIButton {
-    
+
     /// Sets the background color to use for the specified button state.
     /// - Parameters:
     ///   - color: The background color to use for the specified state.
@@ -15,7 +15,7 @@ extension UIButton {
             color.setFill()
             context.fill(drawingRect)
         }
-        
+
         setBackgroundImage(backgroundImage, for: state)
     }
 }

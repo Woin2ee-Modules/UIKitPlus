@@ -22,7 +22,7 @@ final class ViewController: UIViewController {
         button.addAction(action, for: .touchUpInside)
         return button
     }()
-    
+
     lazy var hapticOnOffSwitch: UISwitch = {
         let `switch`: UISwitch = .init()
         `switch`.isOn = HapticGenerator.shared.isOn
@@ -32,23 +32,23 @@ final class ViewController: UIViewController {
         `switch`.addAction(action, for: .valueChanged)
         return `switch`
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.view.addSubview(hapticButton)
         hapticButton.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(hapticOnOffSwitch)
         hapticOnOffSwitch.translatesAutoresizingMaskIntoConstraints = false
-        
+
         NSLayoutConstraint.activate([
             hapticButton.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
             hapticButton.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerYAnchor),
             hapticButton.widthAnchor.constraint(equalToConstant: 100),
             hapticButton.heightAnchor.constraint(equalToConstant: 50),
-            
+
             hapticOnOffSwitch.leadingAnchor.constraint(equalTo: hapticButton.trailingAnchor, constant: 20),
-            hapticOnOffSwitch.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerYAnchor),
+            hapticOnOffSwitch.centerYAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.centerYAnchor)
         ])
     }
 }
