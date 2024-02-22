@@ -12,10 +12,11 @@
 		DA6904CB2B85E3AF00FB2019 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904C82B85E3AF00FB2019 /* HapticGenerator.swift */; };
 		DA6904D52B85E4F400FB2019 /* UIKitPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6904B32B85E31200FB2019 /* UIKitPlus.framework */; };
 		DA6904DF2B85E73B00FB2019 /* UIKitPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904DC2B85E72700FB2019 /* UIKitPlusTests.swift */; };
+		DA6904E72B86E37600FB2019 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904E62B86E37600FB2019 /* UIFont+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DA6904D62B85E4F400FB2019 /* PBXContainerItemProxy */ = {
+		DA268A2D2B873F5E00CEFFC4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DA6904AA2B85E31200FB2019 /* Project object */;
 			proxyType = 1;
@@ -31,6 +32,7 @@
 		DA6904C82B85E3AF00FB2019 /* HapticGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
 		DA6904D12B85E4F300FB2019 /* UIKitPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6904DC2B85E72700FB2019 /* UIKitPlusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitPlusTests.swift; sourceTree = "<group>"; };
+		DA6904E62B86E37600FB2019 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				DA6904C82B85E3AF00FB2019 /* HapticGenerator.swift */,
 				DA6904C72B85E3AF00FB2019 /* UIButton+.swift */,
 				DA6904C62B85E3AF00FB2019 /* UIKitPlus.swift */,
+				DA6904E62B86E37600FB2019 /* UIFont+.swift */,
 			);
 			name = UIKitPlus;
 			path = Sources/UIKitPlus;
@@ -139,7 +142,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DA6904D72B85E4F400FB2019 /* PBXTargetDependency */,
+				DA268A2E2B873F5E00CEFFC4 /* PBXTargetDependency */,
 			);
 			name = UIKitPlusTests;
 			productName = Tests;
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6904E72B86E37600FB2019 /* UIFont+.swift in Sources */,
 				DA6904C92B85E3AF00FB2019 /* UIKitPlus.swift in Sources */,
 				DA6904CA2B85E3AF00FB2019 /* UIButton+.swift in Sources */,
 				DA6904CB2B85E3AF00FB2019 /* HapticGenerator.swift in Sources */,
@@ -223,10 +227,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DA6904D72B85E4F400FB2019 /* PBXTargetDependency */ = {
+		DA268A2E2B873F5E00CEFFC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DA6904B22B85E31200FB2019 /* UIKitPlus */;
-			targetProxy = DA6904D62B85E4F400FB2019 /* PBXContainerItemProxy */;
+			targetProxy = DA268A2D2B873F5E00CEFFC4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -371,7 +375,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -408,7 +412,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,9 +440,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AVC8X7323;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.woin2ee.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,9 +459,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2AVC8X7323;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.woin2ee.Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
