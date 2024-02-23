@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA268A302B875CF800CEFFC4 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA268A2F2B875CF800CEFFC4 /* UITableView+.swift */; };
 		DA6904C92B85E3AF00FB2019 /* UIKitPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904C62B85E3AF00FB2019 /* UIKitPlus.swift */; };
 		DA6904CA2B85E3AF00FB2019 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904C72B85E3AF00FB2019 /* UIButton+.swift */; };
 		DA6904CB2B85E3AF00FB2019 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904C82B85E3AF00FB2019 /* HapticGenerator.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA268A2F2B875CF800CEFFC4 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		DA6904B32B85E31200FB2019 /* UIKitPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6904C62B85E3AF00FB2019 /* UIKitPlus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitPlus.swift; sourceTree = "<group>"; };
 		DA6904C72B85E3AF00FB2019 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				DA6904C72B85E3AF00FB2019 /* UIButton+.swift */,
 				DA6904C62B85E3AF00FB2019 /* UIKitPlus.swift */,
 				DA6904E62B86E37600FB2019 /* UIFont+.swift */,
+				DA268A2F2B875CF800CEFFC4 /* UITableView+.swift */,
 			);
 			name = UIKitPlus;
 			path = Sources/UIKitPlus;
@@ -212,6 +215,7 @@
 				DA6904E72B86E37600FB2019 /* UIFont+.swift in Sources */,
 				DA6904C92B85E3AF00FB2019 /* UIKitPlus.swift in Sources */,
 				DA6904CA2B85E3AF00FB2019 /* UIButton+.swift in Sources */,
+				DA268A302B875CF800CEFFC4 /* UITableView+.swift in Sources */,
 				DA6904CB2B85E3AF00FB2019 /* HapticGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
