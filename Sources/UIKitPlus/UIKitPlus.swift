@@ -9,7 +9,7 @@ public protocol ReuseIdentifying {
 
 extension ReuseIdentifying {
 
-    static var reuseIdentifier: String {
+    public static var reuseIdentifier: String {
         String(describing: self)
     }
 }

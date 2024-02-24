@@ -1,6 +1,5 @@
-@testable import UIKitPlus
-
 import UIKit
+import UIKitPlus
 import XCTest
 
 final class UIKitPlusTests: XCTestCase {
