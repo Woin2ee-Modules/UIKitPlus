@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DA268A302B875CF800CEFFC4 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA268A2F2B875CF800CEFFC4 /* UITableView+.swift */; };
+		DA3C58C42B90E8DC002F5243 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C58C12B90E8DC002F5243 /* UIFont+.swift */; };
+		DA3C58C52B90E8DC002F5243 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C58C22B90E8DC002F5243 /* UIButton+.swift */; };
+		DA3C58C62B90E8DC002F5243 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C58C32B90E8DC002F5243 /* UITableView+.swift */; };
 		DA6904C92B85E3AF00FB2019 /* UIKitPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904C62B85E3AF00FB2019 /* UIKitPlus.swift */; };
-		DA6904CA2B85E3AF00FB2019 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904C72B85E3AF00FB2019 /* UIButton+.swift */; };
 		DA6904CB2B85E3AF00FB2019 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904C82B85E3AF00FB2019 /* HapticGenerator.swift */; };
 		DA6904D52B85E4F400FB2019 /* UIKitPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6904B32B85E31200FB2019 /* UIKitPlus.framework */; };
 		DA6904DF2B85E73B00FB2019 /* UIKitPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904DC2B85E72700FB2019 /* UIKitPlusTests.swift */; };
-		DA6904E72B86E37600FB2019 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904E62B86E37600FB2019 /* UIFont+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,14 +27,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DA268A2F2B875CF800CEFFC4 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		DA3C58C12B90E8DC002F5243 /* UIFont+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		DA3C58C22B90E8DC002F5243 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		DA3C58C32B90E8DC002F5243 /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		DA6904B32B85E31200FB2019 /* UIKitPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIKitPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6904C62B85E3AF00FB2019 /* UIKitPlus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitPlus.swift; sourceTree = "<group>"; };
-		DA6904C72B85E3AF00FB2019 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		DA6904C82B85E3AF00FB2019 /* HapticGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
 		DA6904D12B85E4F300FB2019 /* UIKitPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6904DC2B85E72700FB2019 /* UIKitPlusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitPlusTests.swift; sourceTree = "<group>"; };
-		DA6904E62B86E37600FB2019 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +56,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA3C58C02B90E8DC002F5243 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DA3C58C12B90E8DC002F5243 /* UIFont+.swift */,
+				DA3C58C22B90E8DC002F5243 /* UIButton+.swift */,
+				DA3C58C32B90E8DC002F5243 /* UITableView+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		DA6904A92B85E31200FB2019 = {
 			isa = PBXGroup;
 			children = (
@@ -77,11 +87,9 @@
 		DA6904B52B85E31300FB2019 /* UIKitPlus */ = {
 			isa = PBXGroup;
 			children = (
+				DA3C58C02B90E8DC002F5243 /* Extensions */,
 				DA6904C82B85E3AF00FB2019 /* HapticGenerator.swift */,
-				DA6904C72B85E3AF00FB2019 /* UIButton+.swift */,
 				DA6904C62B85E3AF00FB2019 /* UIKitPlus.swift */,
-				DA6904E62B86E37600FB2019 /* UIFont+.swift */,
-				DA268A2F2B875CF800CEFFC4 /* UITableView+.swift */,
 			);
 			name = UIKitPlus;
 			path = Sources/UIKitPlus;
@@ -212,11 +220,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA6904E72B86E37600FB2019 /* UIFont+.swift in Sources */,
 				DA6904C92B85E3AF00FB2019 /* UIKitPlus.swift in Sources */,
-				DA6904CA2B85E3AF00FB2019 /* UIButton+.swift in Sources */,
-				DA268A302B875CF800CEFFC4 /* UITableView+.swift in Sources */,
+				DA3C58C42B90E8DC002F5243 /* UIFont+.swift in Sources */,
 				DA6904CB2B85E3AF00FB2019 /* HapticGenerator.swift in Sources */,
+				DA3C58C62B90E8DC002F5243 /* UITableView+.swift in Sources */,
+				DA3C58C52B90E8DC002F5243 /* UIButton+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
