@@ -14,6 +14,7 @@
 		DA6904CB2B85E3AF00FB2019 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904C82B85E3AF00FB2019 /* HapticGenerator.swift */; };
 		DA6904D52B85E4F400FB2019 /* UIKitPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6904B32B85E31200FB2019 /* UIKitPlus.framework */; };
 		DA6904DF2B85E73B00FB2019 /* UIKitPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904DC2B85E72700FB2019 /* UIKitPlusTests.swift */; };
+		DAD1EFC82BD62B0800ECBA94 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1EFC72BD62B0800ECBA94 /* PaddingLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		DA6904C82B85E3AF00FB2019 /* HapticGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
 		DA6904D12B85E4F300FB2019 /* UIKitPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6904DC2B85E72700FB2019 /* UIKitPlusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitPlusTests.swift; sourceTree = "<group>"; };
+		DAD1EFC72BD62B0800ECBA94 /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				DA3C58C02B90E8DC002F5243 /* Extensions */,
 				DA6904C82B85E3AF00FB2019 /* HapticGenerator.swift */,
+				DAD1EFC72BD62B0800ECBA94 /* PaddingLabel.swift */,
 				DA6904C62B85E3AF00FB2019 /* UIKitPlus.swift */,
 			);
 			name = UIKitPlus;
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD1EFC82BD62B0800ECBA94 /* PaddingLabel.swift in Sources */,
 				DA6904C92B85E3AF00FB2019 /* UIKitPlus.swift in Sources */,
 				DA3C58C42B90E8DC002F5243 /* UIFont+.swift in Sources */,
 				DA6904CB2B85E3AF00FB2019 /* HapticGenerator.swift in Sources */,
