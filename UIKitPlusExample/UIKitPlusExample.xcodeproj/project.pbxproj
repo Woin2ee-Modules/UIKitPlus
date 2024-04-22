@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		DA69048F2B85D61B00FB2019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69048E2B85D61B00FB2019 /* AppDelegate.swift */; };
 		DA6904912B85D61B00FB2019 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904902B85D61B00FB2019 /* SceneDelegate.swift */; };
-		DA6904932B85D61B00FB2019 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904922B85D61B00FB2019 /* ViewController.swift */; };
+		DA6904932B85D61B00FB2019 /* ExampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904922B85D61B00FB2019 /* ExampleListViewController.swift */; };
 		DA6904962B85D61B00FB2019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6904942B85D61B00FB2019 /* Main.storyboard */; };
 		DA6904982B85D61C00FB2019 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA6904972B85D61C00FB2019 /* Assets.xcassets */; };
 		DA69049B2B85D61C00FB2019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6904992B85D61C00FB2019 /* LaunchScreen.storyboard */; };
 		DA6904E22B85E84300FB2019 /* UIKitPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6904E12B85E84300FB2019 /* UIKitPlus.framework */; };
 		DA6904E32B85E84300FB2019 /* UIKitPlus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA6904E12B85E84300FB2019 /* UIKitPlus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DAD1EFCB2BD62DC300ECBA94 /* UIFontPreferredFontExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1EFC92BD62DC300ECBA94 /* UIFontPreferredFontExample.swift */; };
+		DAD1EFCD2BD62E8B00ECBA94 /* HapticGeneratorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1EFCC2BD62E8B00ECBA94 /* HapticGeneratorExample.swift */; };
+		DAD1EFCF2BD62F2E00ECBA94 /* UIButtonSetBackgroundColorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1EFCE2BD62F2E00ECBA94 /* UIButtonSetBackgroundColorExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,12 +38,15 @@
 		DA69048B2B85D61B00FB2019 /* UIKitPlusExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPlusExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA69048E2B85D61B00FB2019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA6904902B85D61B00FB2019 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA6904922B85D61B00FB2019 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA6904922B85D61B00FB2019 /* ExampleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleListViewController.swift; sourceTree = "<group>"; };
 		DA6904952B85D61B00FB2019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA6904972B85D61C00FB2019 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA69049A2B85D61C00FB2019 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA69049C2B85D61C00FB2019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA6904E12B85E84300FB2019 /* UIKitPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UIKitPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAD1EFC92BD62DC300ECBA94 /* UIFontPreferredFontExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontPreferredFontExample.swift; sourceTree = "<group>"; };
+		DAD1EFCC2BD62E8B00ECBA94 /* HapticGeneratorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticGeneratorExample.swift; sourceTree = "<group>"; };
+		DAD1EFCE2BD62F2E00ECBA94 /* UIButtonSetBackgroundColorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonSetBackgroundColorExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +81,10 @@
 		DA69048D2B85D61B00FB2019 /* UIKitPlusExample */ = {
 			isa = PBXGroup;
 			children = (
+				DAD1EFCA2BD62DC300ECBA94 /* ExampleViewControllers */,
 				DA69048E2B85D61B00FB2019 /* AppDelegate.swift */,
 				DA6904902B85D61B00FB2019 /* SceneDelegate.swift */,
-				DA6904922B85D61B00FB2019 /* ViewController.swift */,
+				DA6904922B85D61B00FB2019 /* ExampleListViewController.swift */,
 				DA6904942B85D61B00FB2019 /* Main.storyboard */,
 				DA6904972B85D61C00FB2019 /* Assets.xcassets */,
 				DA6904992B85D61C00FB2019 /* LaunchScreen.storyboard */,
@@ -92,6 +99,16 @@
 				DA6904E12B85E84300FB2019 /* UIKitPlus.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAD1EFCA2BD62DC300ECBA94 /* ExampleViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAD1EFC92BD62DC300ECBA94 /* UIFontPreferredFontExample.swift */,
+				DAD1EFCC2BD62E8B00ECBA94 /* HapticGeneratorExample.swift */,
+				DAD1EFCE2BD62F2E00ECBA94 /* UIButtonSetBackgroundColorExample.swift */,
+			);
+			path = ExampleViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA6904932B85D61B00FB2019 /* ViewController.swift in Sources */,
+				DAD1EFCF2BD62F2E00ECBA94 /* UIButtonSetBackgroundColorExample.swift in Sources */,
+				DAD1EFCD2BD62E8B00ECBA94 /* HapticGeneratorExample.swift in Sources */,
+				DAD1EFCB2BD62DC300ECBA94 /* UIFontPreferredFontExample.swift in Sources */,
+				DA6904932B85D61B00FB2019 /* ExampleListViewController.swift in Sources */,
 				DA69048F2B85D61B00FB2019 /* AppDelegate.swift in Sources */,
 				DA6904912B85D61B00FB2019 /* SceneDelegate.swift in Sources */,
 			);
