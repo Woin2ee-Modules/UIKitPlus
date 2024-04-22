@@ -10,7 +10,7 @@ public final class PaddingLabel: UILabel {
         }
     }
 
-    public init(padding: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)) {
+    public init(padding: UIEdgeInsets = UIEdgeInsets(top: 5, left: 8, bottom: 5, right: 8)) {
         self.padding = padding
         super.init(frame: .zero)
     }
