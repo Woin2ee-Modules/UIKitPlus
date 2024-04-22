@@ -18,6 +18,7 @@
 		DAD1EFCB2BD62DC300ECBA94 /* UIFontPreferredFontExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1EFC92BD62DC300ECBA94 /* UIFontPreferredFontExample.swift */; };
 		DAD1EFCD2BD62E8B00ECBA94 /* HapticGeneratorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1EFCC2BD62E8B00ECBA94 /* HapticGeneratorExample.swift */; };
 		DAD1EFCF2BD62F2E00ECBA94 /* UIButtonSetBackgroundColorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1EFCE2BD62F2E00ECBA94 /* UIButtonSetBackgroundColorExample.swift */; };
+		DAD1EFD12BD6310500ECBA94 /* PaddingLabelExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1EFD02BD6310500ECBA94 /* PaddingLabelExample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,7 @@
 		DAD1EFC92BD62DC300ECBA94 /* UIFontPreferredFontExample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontPreferredFontExample.swift; sourceTree = "<group>"; };
 		DAD1EFCC2BD62E8B00ECBA94 /* HapticGeneratorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticGeneratorExample.swift; sourceTree = "<group>"; };
 		DAD1EFCE2BD62F2E00ECBA94 /* UIButtonSetBackgroundColorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonSetBackgroundColorExample.swift; sourceTree = "<group>"; };
+		DAD1EFD02BD6310500ECBA94 /* PaddingLabelExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabelExample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				DAD1EFC92BD62DC300ECBA94 /* UIFontPreferredFontExample.swift */,
+				DAD1EFD02BD6310500ECBA94 /* PaddingLabelExample.swift */,
 				DAD1EFCC2BD62E8B00ECBA94 /* HapticGeneratorExample.swift */,
 				DAD1EFCE2BD62F2E00ECBA94 /* UIButtonSetBackgroundColorExample.swift */,
 			);
@@ -190,6 +193,7 @@
 				DAD1EFCF2BD62F2E00ECBA94 /* UIButtonSetBackgroundColorExample.swift in Sources */,
 				DAD1EFCD2BD62E8B00ECBA94 /* HapticGeneratorExample.swift in Sources */,
 				DAD1EFCB2BD62DC300ECBA94 /* UIFontPreferredFontExample.swift in Sources */,
+				DAD1EFD12BD6310500ECBA94 /* PaddingLabelExample.swift in Sources */,
 				DA6904932B85D61B00FB2019 /* ExampleListViewController.swift in Sources */,
 				DA69048F2B85D61B00FB2019 /* AppDelegate.swift in Sources */,
 				DA6904912B85D61B00FB2019 /* SceneDelegate.swift in Sources */,

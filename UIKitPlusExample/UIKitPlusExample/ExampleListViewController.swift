@@ -1,19 +1,14 @@
 import UIKit
 
-enum ExampleView: String {
+enum ExampleView: String, CaseIterable {
     case preferredFont = "UIFont/PreferredFont"
     case hapticGenerator = "HapticGenerator"
     case setBackgroundColor = "UIButton/SetBackgroundColor"
+    case paddingLabel = "PaddingLabel"
 }
 
 final class ExampleListViewController: UIViewController {
 
-    let exampleList: [ExampleView] = [
-        .preferredFont,
-        .hapticGenerator,
-        .setBackgroundColor,
-    ]
-    
     lazy var exampleTableView: UITableView = {
         let tableView = UITableView()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "ExampleCell")
@@ -35,13 +30,13 @@ final class ExampleListViewController: UIViewController {
 extension ExampleListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return exampleList.count
+        return ExampleView.allCases.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExampleCell", for: indexPath)
         var contentConfig = cell.defaultContentConfiguration()
-        contentConfig.text = exampleList[indexPath.row].rawValue
+        contentConfig.text = ExampleView.allCases[indexPath.row].rawValue
         cell.contentConfiguration = contentConfig
         return cell
     }
@@ -50,13 +45,15 @@ extension ExampleListViewController: UITableViewDataSource, UITableViewDelegate 
         tableView.deselectRow(at: indexPath, animated: true)
         
         let exampleViewController: UIViewController
-        switch exampleList[indexPath.row] {
+        switch ExampleView.allCases[indexPath.row] {
         case .preferredFont:
             exampleViewController = UIFontPreferredFontExampleViewController()
         case .hapticGenerator:
             exampleViewController = HapticGeneratorExampleViewController()
         case .setBackgroundColor:
             exampleViewController = UIButtonSetBackgroundColorExampleViewController()
+        case .paddingLabel:
+            exampleViewController = PaddingLabelExampleViewController()
         }
         
         self.navigationController?.pushViewController(exampleViewController, animated: true)
