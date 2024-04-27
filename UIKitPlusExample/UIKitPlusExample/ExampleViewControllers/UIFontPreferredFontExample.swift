@@ -19,6 +19,14 @@ final class UIFontPreferredFontExampleViewController: UIViewController {
         return label
     }()
     
+    lazy var sizedPreferredFontLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Lorem ipsum dolor sit amet."
+        label.adjustsFontForContentSizeCategory = true
+        label.font = .preferredFont(ofSize: 20, weight: .ultraLight)
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +36,8 @@ final class UIFontPreferredFontExampleViewController: UIViewController {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(bodyLabel)
         bodyLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(sizedPreferredFontLabel)
+        sizedPreferredFontLabel.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
             titleLabel.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 10),
@@ -37,6 +47,10 @@ final class UIFontPreferredFontExampleViewController: UIViewController {
             bodyLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10),
             bodyLabel.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 10),
             bodyLabel.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -10),
+            
+            sizedPreferredFontLabel.topAnchor.constraint(equalTo: bodyLabel.bottomAnchor, constant: 10),
+            sizedPreferredFontLabel.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 10),
+            sizedPreferredFontLabel.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -10),
         ])
     }
 }
