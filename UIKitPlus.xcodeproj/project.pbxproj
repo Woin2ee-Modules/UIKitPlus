@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA1917722BF7651B00A169EC /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1917712BF7651B00A169EC /* UIImageView+.swift */; };
+		DA371E9F2BF8795500E48DAF /* UIKitPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6904B32B85E31200FB2019 /* UIKitPlus.framework */; };
 		DA3C58C42B90E8DC002F5243 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C58C12B90E8DC002F5243 /* UIFont+.swift */; };
 		DA3C58C52B90E8DC002F5243 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C58C22B90E8DC002F5243 /* UIButton+.swift */; };
 		DA3C58C62B90E8DC002F5243 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C58C32B90E8DC002F5243 /* UITableView+.swift */; };
 		DA6904C92B85E3AF00FB2019 /* UIKitPlus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904C62B85E3AF00FB2019 /* UIKitPlus.swift */; };
 		DA6904CB2B85E3AF00FB2019 /* HapticGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904C82B85E3AF00FB2019 /* HapticGenerator.swift */; };
-		DA6904D52B85E4F400FB2019 /* UIKitPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6904B32B85E31200FB2019 /* UIKitPlus.framework */; };
 		DA6904DF2B85E73B00FB2019 /* UIKitPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904DC2B85E72700FB2019 /* UIKitPlusTests.swift */; };
+		DAAA618C2BF7B33D00706850 /* 100_100px.png in Resources */ = {isa = PBXBuildFile; fileRef = DAAA618A2BF7B33C00706850 /* 100_100px.png */; };
+		DAAA618E2BF877E300706850 /* UIImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA618D2BF877E300706850 /* UIImageViewTests.swift */; };
 		DAD1EFC82BD62B0800ECBA94 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD1EFC72BD62B0800ECBA94 /* PaddingLabel.swift */; };
+		DAF40F252BE533BF006E6827 /* ReuseIdentifying.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF40F242BE533BF006E6827 /* ReuseIdentifying.swift */; };
+		DAF40F272BE53583006E6827 /* ReuseIdentifyingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF40F262BE53583006E6827 /* ReuseIdentifyingTests.swift */; };
+		DAF40F292BE5368E006E6827 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF40F282BE5368E006E6827 /* UICollectionView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA1917712BF7651B00A169EC /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		DA3C58C12B90E8DC002F5243 /* UIFont+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		DA3C58C22B90E8DC002F5243 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		DA3C58C32B90E8DC002F5243 /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
@@ -36,7 +43,12 @@
 		DA6904C82B85E3AF00FB2019 /* HapticGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticGenerator.swift; sourceTree = "<group>"; };
 		DA6904D12B85E4F300FB2019 /* UIKitPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIKitPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6904DC2B85E72700FB2019 /* UIKitPlusTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitPlusTests.swift; sourceTree = "<group>"; };
+		DAAA618A2BF7B33C00706850 /* 100_100px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 100_100px.png; sourceTree = "<group>"; };
+		DAAA618D2BF877E300706850 /* UIImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewTests.swift; sourceTree = "<group>"; };
 		DAD1EFC72BD62B0800ECBA94 /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		DAF40F242BE533BF006E6827 /* ReuseIdentifying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifying.swift; sourceTree = "<group>"; };
+		DAF40F262BE53583006E6827 /* ReuseIdentifyingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifyingTests.swift; sourceTree = "<group>"; };
+		DAF40F282BE5368E006E6827 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,19 +63,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA6904D52B85E4F400FB2019 /* UIKitPlus.framework in Frameworks */,
+				DA371E9F2BF8795500E48DAF /* UIKitPlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA371E9E2BF8795500E48DAF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA3C58C02B90E8DC002F5243 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				DA3C58C12B90E8DC002F5243 /* UIFont+.swift */,
 				DA3C58C22B90E8DC002F5243 /* UIButton+.swift */,
 				DA3C58C32B90E8DC002F5243 /* UITableView+.swift */,
+				DAF40F282BE5368E006E6827 /* UICollectionView+.swift */,
+				DA1917712BF7651B00A169EC /* UIImageView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -74,6 +95,7 @@
 				DA6904B52B85E31300FB2019 /* UIKitPlus */,
 				DA6904D22B85E4F400FB2019 /* Tests */,
 				DA6904B42B85E31200FB2019 /* Products */,
+				DA371E9E2BF8795500E48DAF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +115,7 @@
 				DA6904C82B85E3AF00FB2019 /* HapticGenerator.swift */,
 				DAD1EFC72BD62B0800ECBA94 /* PaddingLabel.swift */,
 				DA6904C62B85E3AF00FB2019 /* UIKitPlus.swift */,
+				DAF40F242BE533BF006E6827 /* ReuseIdentifying.swift */,
 			);
 			name = UIKitPlus;
 			path = Sources/UIKitPlus;
@@ -109,9 +132,20 @@
 		DA6904DB2B85E72700FB2019 /* UIKitPlusTests */ = {
 			isa = PBXGroup;
 			children = (
+				DAAA618B2BF7B33C00706850 /* Resources */,
 				DA6904DC2B85E72700FB2019 /* UIKitPlusTests.swift */,
+				DAF40F262BE53583006E6827 /* ReuseIdentifyingTests.swift */,
+				DAAA618D2BF877E300706850 /* UIImageViewTests.swift */,
 			);
 			path = UIKitPlusTests;
+			sourceTree = "<group>";
+		};
+		DAAA618B2BF7B33C00706850 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DAAA618A2BF7B33C00706850 /* 100_100px.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAAA618C2BF7B33D00706850 /* 100_100px.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +258,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1917722BF7651B00A169EC /* UIImageView+.swift in Sources */,
+				DAF40F252BE533BF006E6827 /* ReuseIdentifying.swift in Sources */,
 				DAD1EFC82BD62B0800ECBA94 /* PaddingLabel.swift in Sources */,
+				DAF40F292BE5368E006E6827 /* UICollectionView+.swift in Sources */,
 				DA6904C92B85E3AF00FB2019 /* UIKitPlus.swift in Sources */,
 				DA3C58C42B90E8DC002F5243 /* UIFont+.swift in Sources */,
 				DA6904CB2B85E3AF00FB2019 /* HapticGenerator.swift in Sources */,
@@ -236,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAAA618E2BF877E300706850 /* UIImageViewTests.swift in Sources */,
 				DA6904DF2B85E73B00FB2019 /* UIKitPlusTests.swift in Sources */,
+				DAF40F272BE53583006E6827 /* ReuseIdentifyingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

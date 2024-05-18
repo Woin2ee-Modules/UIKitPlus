@@ -4,6 +4,8 @@ import UIKit
 
 extension UITableView {
 
+    // MARK: Dequeue
+    
     /// Returns a reusable table-view cell object for the class that conform to the `ReuseIdentifying` protocol and adds it to the table.
     ///
     /// - Parameters:
@@ -18,7 +20,7 @@ extension UITableView {
         let cell = self.dequeueReusableCell(withIdentifier: type.reuseIdentifier, for: indexPath)
 
         guard let reusableCell = cell as? Cell else {
-            fatalError("Failed to dequeue cell with '\(Cell.self)' type, '\(Cell.reuseIdentifier)' reuse identifier.")
+            fatalError("🛑 Failed to dequeue cell with '\(Cell.self)' type, '\(Cell.reuseIdentifier)' reuse identifier. Please check to adopt `ReuseIdentifying` protocol with your cell.")
         }
 
         return reusableCell
@@ -33,12 +35,14 @@ extension UITableView {
         let headerFooterView = self.dequeueReusableHeaderFooterView(withIdentifier: type.reuseIdentifier)
 
         guard let reusableHeaderFooterView = headerFooterView as? HeaderFoorterView else {
-            fatalError("Failed to dequeue header or footer view with '\(HeaderFoorterView.self)' type, '\(HeaderFoorterView.reuseIdentifier)' reuse identifier.")
+            fatalError("Failed to dequeue header or footer view with '\(HeaderFoorterView.self)' type, '\(HeaderFoorterView.reuseIdentifier)' reuse identifier. Please check to adopt `ReuseIdentifying` protocol with your header or footer view.")
         }
 
         return reusableHeaderFooterView
     }
 
+    // MARK: Register
+    
     public func register<Cell: UITableViewCell & ReuseIdentifying>(_ cellClass: Cell.Type) {
         self.register(cellClass.self, forCellReuseIdentifier: Cell.reuseIdentifier)
     }

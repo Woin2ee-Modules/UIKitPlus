@@ -15,6 +15,10 @@ let package = Package(
             name: "UIKitPlus"),
         .testTarget(
             name: "UIKitPlusTests",
-            dependencies: ["UIKitPlus"])
+            dependencies: ["UIKitPlus"],
+            resources: [
+                .copy("Resources"),
+            ]
+        ),
     ]
 )
