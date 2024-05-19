@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA1917722BF7651B00A169EC /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1917712BF7651B00A169EC /* UIImageView+.swift */; };
 		DA371E9F2BF8795500E48DAF /* UIKitPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6904B32B85E31200FB2019 /* UIKitPlus.framework */; };
+		DA371EA32BF9D98E00E48DAF /* UIEdgeInsets+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA371EA22BF9D98E00E48DAF /* UIEdgeInsets+.swift */; };
 		DA3C58C42B90E8DC002F5243 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C58C12B90E8DC002F5243 /* UIFont+.swift */; };
 		DA3C58C52B90E8DC002F5243 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C58C22B90E8DC002F5243 /* UIButton+.swift */; };
 		DA3C58C62B90E8DC002F5243 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C58C32B90E8DC002F5243 /* UITableView+.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		DA1917712BF7651B00A169EC /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		DA371EA22BF9D98E00E48DAF /* UIEdgeInsets+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+.swift"; sourceTree = "<group>"; };
 		DA3C58C12B90E8DC002F5243 /* UIFont+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		DA3C58C22B90E8DC002F5243 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 		DA3C58C32B90E8DC002F5243 /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				DA3C58C32B90E8DC002F5243 /* UITableView+.swift */,
 				DAF40F282BE5368E006E6827 /* UICollectionView+.swift */,
 				DA1917712BF7651B00A169EC /* UIImageView+.swift */,
+				DA371EA22BF9D98E00E48DAF /* UIEdgeInsets+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA371EA32BF9D98E00E48DAF /* UIEdgeInsets+.swift in Sources */,
 				DA1917722BF7651B00A169EC /* UIImageView+.swift in Sources */,
 				DAF40F252BE533BF006E6827 /* ReuseIdentifying.swift in Sources */,
 				DAD1EFC82BD62B0800ECBA94 /* PaddingLabel.swift in Sources */,
