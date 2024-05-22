@@ -5,9 +5,10 @@ import UIKitPlus
 
 final class RoundedProgressViewExampleViewController: UIViewController {
 
-    lazy var progressBar = RoundedProgressView(max: 10).then {
+    lazy var progressBar = RoundedProgressView().then {
         $0.progressBarColor = .systemOrange
         $0.backgroundColor = .systemCyan
+        $0.max = 10
         $0.progress = 3
         $0.progressBarInset = 5
     }
