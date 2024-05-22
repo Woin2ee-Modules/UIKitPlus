@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0CFE0D2BFDD77F00E164C8 /* RoundedProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0CFE0C2BFDD77F00E164C8 /* RoundedProgressView.swift */; };
 		DA1917722BF7651B00A169EC /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1917712BF7651B00A169EC /* UIImageView+.swift */; };
 		DA371E9F2BF8795500E48DAF /* UIKitPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6904B32B85E31200FB2019 /* UIKitPlus.framework */; };
 		DA371EA32BF9D98E00E48DAF /* UIEdgeInsets+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA371EA22BF9D98E00E48DAF /* UIEdgeInsets+.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA0CFE0C2BFDD77F00E164C8 /* RoundedProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedProgressView.swift; sourceTree = "<group>"; };
 		DA1917712BF7651B00A169EC /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		DA371EA22BF9D98E00E48DAF /* UIEdgeInsets+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+.swift"; sourceTree = "<group>"; };
 		DA3C58C12B90E8DC002F5243 /* UIFont+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				DAD1EFC72BD62B0800ECBA94 /* PaddingLabel.swift */,
 				DA6904C62B85E3AF00FB2019 /* UIKitPlus.swift */,
 				DAF40F242BE533BF006E6827 /* ReuseIdentifying.swift */,
+				DA0CFE0C2BFDD77F00E164C8 /* RoundedProgressView.swift */,
 			);
 			name = UIKitPlus;
 			path = Sources/UIKitPlus;
@@ -269,6 +272,7 @@
 				DA6904C92B85E3AF00FB2019 /* UIKitPlus.swift in Sources */,
 				DA3C58C42B90E8DC002F5243 /* UIFont+.swift in Sources */,
 				DA6904CB2B85E3AF00FB2019 /* HapticGenerator.swift in Sources */,
+				DA0CFE0D2BFDD77F00E164C8 /* RoundedProgressView.swift in Sources */,
 				DA3C58C62B90E8DC002F5243 /* UITableView+.swift in Sources */,
 				DA3C58C52B90E8DC002F5243 /* UIButton+.swift in Sources */,
 			);

@@ -5,6 +5,7 @@ enum ExampleView: String, CaseIterable {
     case hapticGenerator = "HapticGenerator"
     case setBackgroundColor = "UIButton/SetBackgroundColor"
     case paddingLabel = "PaddingLabel"
+    case roundedProgressView = "RoundedProgressView"
 }
 
 final class ExampleListViewController: UIViewController {
@@ -54,6 +55,8 @@ extension ExampleListViewController: UITableViewDataSource, UITableViewDelegate 
             exampleViewController = UIButtonSetBackgroundColorExampleViewController()
         case .paddingLabel:
             exampleViewController = PaddingLabelExampleViewController()
+        case .roundedProgressView:
+            exampleViewController = RoundedProgressViewExampleViewController()
         }
         
         self.navigationController?.pushViewController(exampleViewController, animated: true)

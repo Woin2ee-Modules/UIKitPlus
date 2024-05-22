@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0CFE0F2BFDDA6200E164C8 /* RoundedProgressViewExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0CFE0E2BFDDA6200E164C8 /* RoundedProgressViewExample.swift */; };
+		DA0CFE122BFDDA8C00E164C8 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = DA0CFE112BFDDA8C00E164C8 /* PinLayout */; };
+		DA0CFE152BFDDA9400E164C8 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = DA0CFE142BFDDA9400E164C8 /* Then */; };
 		DA69048F2B85D61B00FB2019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69048E2B85D61B00FB2019 /* AppDelegate.swift */; };
 		DA6904912B85D61B00FB2019 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904902B85D61B00FB2019 /* SceneDelegate.swift */; };
 		DA6904932B85D61B00FB2019 /* ExampleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6904922B85D61B00FB2019 /* ExampleListViewController.swift */; };
@@ -36,6 +39,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA0CFE0E2BFDDA6200E164C8 /* RoundedProgressViewExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedProgressViewExample.swift; sourceTree = "<group>"; };
 		DA69048B2B85D61B00FB2019 /* UIKitPlusExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitPlusExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA69048E2B85D61B00FB2019 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA6904902B85D61B00FB2019 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0CFE122BFDDA8C00E164C8 /* PinLayout in Frameworks */,
+				DA0CFE152BFDDA9400E164C8 /* Then in Frameworks */,
 				DA6904E22B85E84300FB2019 /* UIKitPlus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +116,7 @@
 				DAD1EFD02BD6310500ECBA94 /* PaddingLabelExample.swift */,
 				DAD1EFCC2BD62E8B00ECBA94 /* HapticGeneratorExample.swift */,
 				DAD1EFCE2BD62F2E00ECBA94 /* UIButtonSetBackgroundColorExample.swift */,
+				DA0CFE0E2BFDDA6200E164C8 /* RoundedProgressViewExample.swift */,
 			);
 			path = ExampleViewControllers;
 			sourceTree = "<group>";
@@ -132,6 +139,8 @@
 			);
 			name = UIKitPlusExample;
 			packageProductDependencies = (
+				DA0CFE112BFDDA8C00E164C8 /* PinLayout */,
+				DA0CFE142BFDDA9400E164C8 /* Then */,
 			);
 			productName = UIKitPlusExample;
 			productReference = DA69048B2B85D61B00FB2019 /* UIKitPlusExample.app */;
@@ -162,6 +171,8 @@
 			);
 			mainGroup = DA6904822B85D61B00FB2019;
 			packageReferences = (
+				DA0CFE102BFDDA8C00E164C8 /* XCRemoteSwiftPackageReference "PinLayout" */,
+				DA0CFE132BFDDA9400E164C8 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = DA69048C2B85D61B00FB2019 /* Products */;
 			projectDirPath = "";
@@ -190,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0CFE0F2BFDDA6200E164C8 /* RoundedProgressViewExample.swift in Sources */,
 				DAD1EFCF2BD62F2E00ECBA94 /* UIButtonSetBackgroundColorExample.swift in Sources */,
 				DAD1EFCD2BD62E8B00ECBA94 /* HapticGeneratorExample.swift in Sources */,
 				DAD1EFCB2BD62DC300ECBA94 /* UIFontPreferredFontExample.swift in Sources */,
@@ -421,6 +433,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA0CFE102BFDDA8C00E164C8 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.5;
+			};
+		};
+		DA0CFE132BFDDA9400E164C8 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA0CFE112BFDDA8C00E164C8 /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA0CFE102BFDDA8C00E164C8 /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+		DA0CFE142BFDDA9400E164C8 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA0CFE132BFDDA9400E164C8 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA6904832B85D61B00FB2019 /* Project object */;
 }
