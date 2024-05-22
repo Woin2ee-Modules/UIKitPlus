@@ -65,14 +65,10 @@ open class RoundedProgressView: UIView {
         }
     }
     
-    public init(max: Int) {
+    public init(max: Int = 0) {
         self._max = max
         super.init(frame: .zero)
         self.addSubview(progressView)
-    }
-    
-    public convenience init() {
-        self.init(max: 0)
     }
     
     public required init?(coder: NSCoder) {
