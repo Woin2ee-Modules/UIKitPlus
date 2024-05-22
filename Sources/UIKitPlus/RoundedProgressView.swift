@@ -79,7 +79,7 @@ open class RoundedProgressView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
         
         self.layer.cornerRadius = self.bounds.height / 2
