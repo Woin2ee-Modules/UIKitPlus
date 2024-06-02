@@ -38,30 +38,37 @@ open class RoundedProgressView: UIView {
     }
     
     public var progressBarColor: UIColor = .systemBlue {
-        willSet {
-            progressView.backgroundColor = newValue
+        didSet {
+            progressView.backgroundColor = progressBarColor
         }
     }
     
     public var progressBarInset: CGFloat = 3 {
-        willSet {
+        didSet {
             setNeedsLayout()
         }
     }
+    
+    public var isAnimating: Bool = true
     
     // MARK: Private
     
     private let progressView = UIView()
     
     private var _max: Int = 0 {
-        willSet {
+        didSet {
             setNeedsLayout()
         }
     }
     
     private var _progress: Int = 0 {
-        willSet {
+        didSet {
             setNeedsLayout()
+            if isAnimating {
+                UIView.animate(withDuration: 0.3) {
+                    self.layoutIfNeeded()
+                }
+            }
         }
     }
     
@@ -77,16 +84,21 @@ open class RoundedProgressView: UIView {
     
     open override func layoutSubviews() {
         super.layoutSubviews()
-        
-        self.layer.cornerRadius = self.bounds.height / 2
-        
-        progressView.frame = CGRect(
+        let innerFrame = CGRect(
             x: 0,
             y: 0,
             width: bounds.width * progressRatio,
             height: bounds.height
-        ).insetBy(dx: progressBarInset, dy: progressBarInset)
+        )
+        let insetInnerFrame = innerFrame.insetBy(dx: progressBarInset, dy: progressBarInset)
         
+        if insetInnerFrame.isNull {
+            progressView.frame = innerFrame
+        } else {
+            progressView.frame = insetInnerFrame
+        }
+        
+        self.layer.cornerRadius = self.bounds.height / 2
         progressView.layer.cornerRadius = progressView.bounds.height / 2
     }
 }

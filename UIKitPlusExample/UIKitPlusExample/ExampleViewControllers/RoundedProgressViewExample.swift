@@ -38,6 +38,14 @@ final class RoundedProgressViewExampleViewController: UIViewController {
             for: .touchUpInside
         )
     }
+
+    let animationOnOffLabel = UILabel().then {
+        $0.text = "Animation :"
+    }
+    
+    lazy var animationOnOffSwitch = UISwitch().then {
+        $0.isOn = progressBar.isAnimating
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +54,16 @@ final class RoundedProgressViewExampleViewController: UIViewController {
         view.addSubview(progressBar)
         view.addSubview(downButton)
         view.addSubview(upButton)
+        view.addSubview(animationOnOffLabel)
+        view.addSubview(animationOnOffSwitch)
+        
+        animationOnOffSwitch.addAction(
+            UIAction { [weak self] _ in
+                guard let self else { return }
+                self.progressBar.isAnimating = self.animationOnOffSwitch.isOn
+            },
+            for: .valueChanged
+        )
     }
     
     override func viewDidLayoutSubviews() {
@@ -54,5 +72,7 @@ final class RoundedProgressViewExampleViewController: UIViewController {
         progressBar.pin.vCenter().horizontally(20).height(40)
         downButton.pin.vCenter(100).hCenter(-50).sizeToFit()
         upButton.pin.vCenter(100).hCenter(50).sizeToFit()
+        animationOnOffLabel.pin.vCenter(200).hCenter(-50).sizeToFit()
+        animationOnOffSwitch.pin.vCenter(200).hCenter(50).sizeToFit()
     }
 }
