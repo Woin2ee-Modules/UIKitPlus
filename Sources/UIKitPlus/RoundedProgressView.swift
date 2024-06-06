@@ -58,6 +58,11 @@ open class RoundedProgressView: UIView {
     private var _max: Int = 0 {
         didSet {
             setNeedsLayout()
+            if isAnimating {
+                UIView.animate(withDuration: 0.3) {
+                    self.layoutIfNeeded()
+                }
+            }
         }
     }
     

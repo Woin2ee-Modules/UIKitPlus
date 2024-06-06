@@ -43,8 +43,33 @@ final class RoundedProgressViewExampleViewController: UIViewController {
         $0.text = "Animation :"
     }
     
-    lazy var animationOnOffSwitch = UISwitch().then {
-        $0.isOn = progressBar.isAnimating
+    lazy var animationOnOffSwitch = UISwitch().then { `switch` in
+        `switch`.isOn = progressBar.isAnimating
+        `switch`.addAction(
+            UIAction { [weak self] _ in
+                guard let self else { return }
+                self.progressBar.isAnimating = `switch`.isOn
+            },
+            for: .valueChanged
+        )
+    }
+    
+    let maxValueLabel = UILabel().then {
+        $0.text = "Max value :"
+    }
+    
+    lazy var maxValueTextField = UITextField().then { textField in
+        textField.text = "\(progressBar.max)"
+        textField.borderStyle = .roundedRect
+        textField.addAction(
+            UIAction { [weak self] _ in
+                guard let maxValue = Int(textField.text ?? "") else {
+                    return
+                }
+                self?.progressBar.max = maxValue
+            },
+            for: .allEditingEvents
+        )
     }
     
     override func viewDidLoad() {
@@ -56,14 +81,8 @@ final class RoundedProgressViewExampleViewController: UIViewController {
         view.addSubview(upButton)
         view.addSubview(animationOnOffLabel)
         view.addSubview(animationOnOffSwitch)
-        
-        animationOnOffSwitch.addAction(
-            UIAction { [weak self] _ in
-                guard let self else { return }
-                self.progressBar.isAnimating = self.animationOnOffSwitch.isOn
-            },
-            for: .valueChanged
-        )
+        view.addSubview(maxValueLabel)
+        view.addSubview(maxValueTextField)
     }
     
     override func viewDidLayoutSubviews() {
@@ -74,5 +93,7 @@ final class RoundedProgressViewExampleViewController: UIViewController {
         upButton.pin.vCenter(100).hCenter(50).sizeToFit()
         animationOnOffLabel.pin.vCenter(200).hCenter(-50).sizeToFit()
         animationOnOffSwitch.pin.vCenter(200).hCenter(50).sizeToFit()
+        maxValueLabel.pin.vCenter(250).hCenter(-50).sizeToFit()
+        maxValueTextField.pin.vCenter(250).hCenter(50).width(120).sizeToFit()
     }
 }
